@@ -581,3 +581,48 @@ footer {
     margin: 10px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .header-link {
+    margin: 0 20px;
+    gap: 20px;
+  }
+  
+  .biography {
+    padding: 50px 20px;
+  }
+
+  .gallery,
+  .landscape-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* Ajuster les positions des images */
+  .gallery img,
+  .landscape-gallery img {
+    grid-column: span 3;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .gallery,
+  .landscape-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img,
+  .landscape-gallery img {
+    grid-column: 1;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .social-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
